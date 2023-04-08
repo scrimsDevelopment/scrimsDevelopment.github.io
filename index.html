@@ -11,16 +11,51 @@
   <div class="nav-bar">MHPS Drone Team</div>
   <div class="container">
     <div class="bookmarks">
-      <!-- Add the bookmark HTML code from the original code here -->
+      <div class="bookmark">
+        <a href="https://portal.navdrone.ca/" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1062470415064244244/1094037361190514729/scrim20gb_Square_app_logo_maple_leaf_quadcopter_scroll_harmonio_eca40f65-5341-4ee3-85a4-e927b821a85f.png" alt="NavCan Flight Planning">
+          <p>NavCan Flight Planning</p>
+        </a>
+      </div>
+      <div class="bookmark">
+        <a href="https://fh.dji.com/login" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1062470415064244244/1094037361463140383/scrim20gb_Quadcopter_silhouette_square_app_logo_minimalist_styl_c43d0c9d-9024-4f7d-8017-9b035673fbf1.png" alt="Dji Flight Hub">
+          <p>Dji Flight Hub</p>
+        </a>
+      </div>
+      <div class="bookmark">
+        <a href="https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html#s-900.01" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1062470415064244244/1094037360951447593/scrim20gb_Design_a_striking_square_app_logo_that_features_the_s_1208b6b5-b446-488f-b21b-2510ce6c1211.png" alt="Transport Canada Regs">
+          <p>Transport Canada Regs</p>
+        </a>
+      </div>
+      <div class="bookmark">
+        <a href="https://www.flightradar24.com/airport/yxh" target="_blank">
+          <img src="https://cdn.discordapp.com/attachments/1062470415064244244/1094037361735782420/scrim20gb_Square_logo_flight_radar_screen_app_icon_modern_desig_3ad282e4-31e8-4e62-8040-98e91239d218.png" alt="Med Hat Flight Radar">
+          <p>Med Hat Flight Radar</p>
+        </a>
+      </div>
     </div>
     <div class="widgets">
       <div class="weather-widget widget">
-        <!-- Add the weather widget HTML code from the original code here -->
-      </div>
-      <div class="address-widget widget">
-        <!-- Add the address widget HTML code from the original code here -->
-      </div>
-    </div>
+        <h3>Weather - Medicine Hat, Alberta</h3>
+        <p class="temperature"></p>
+        <p class="wind"></p>
+        <p class="conditions"></p>
+        <p class="humidity"></p>
+        <p class="visibility"></p>
+        <button id
+="copyWeather">Copy to clipboard</button>
+</div>
+<div class="address-widget widget">
+<h3>Get Latitude and Longitude</h3>
+<input type="text" id="addressInput" placeholder="Enter street address">
+<button id="getLatLong">Get lat and long</button>
+<p id="coordinates"></p>
+<button id="copyCoordinates" style="display: none;">Copy to clipboard</button>
+</div>
+</div>
+
   </div>
   <script src="scripts.js"></script>
 </body>
