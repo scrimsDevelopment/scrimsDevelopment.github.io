@@ -9,8 +9,8 @@ function fetchWeather() {
     .then(response => response.json())
     .then(data => {
       // Update weather information on the page
-      document.querySelector('.weather-widget .temperature').textContent = `Temperature: ${data.main.temp}°C`;
-      document.querySelector('.weather-widget .wind').textContent = `Wind: ${data.wind.speed} m/s, ${data.wind.deg}°`;
+      document.querySelector('.weather-widget .temperature').textContent = `Temperature: ${data.main.temp}Â°C`;
+      document.querySelector('.weather-widget .wind').textContent = `Wind: ${data.wind.speed} m/s, ${data.wind.deg}Â°`;
       document.querySelector('.weather-widget .conditions').textContent = `Conditions: ${data.weather[0].description}`;
       document.querySelector('.weather-widget .humidity').textContent = `Humidity: ${data.main.humidity}%`;
       document.querySelector('.weather-widget .visibility').textContent = `Visibility: ${data.visibility} m`;
